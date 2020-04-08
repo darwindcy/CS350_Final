@@ -25,7 +25,7 @@ namespace Blogging_Away
             }
             if(txtUsername.Text == txtPassword.Text)
             {
-              
+                this.Hide();
                 Home newHome = new Home();
                 
                 newHome.Show();
