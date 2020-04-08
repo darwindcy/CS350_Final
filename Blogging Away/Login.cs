@@ -12,6 +12,7 @@ namespace Blogging_Away
 {
     public partial class Login : Form
     {
+        public static String currentUser;
         public Login()
         {
             InitializeComponent();
@@ -25,6 +26,7 @@ namespace Blogging_Away
             }
             if(txtUsername.Text == txtPassword.Text)
             {
+                currentUser = txtUsername.Text;
                 this.Hide();
                 Home newHome = new Home();
                 

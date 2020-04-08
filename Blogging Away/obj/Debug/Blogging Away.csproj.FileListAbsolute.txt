@@ -9,3 +9,4 @@ C:\Users\Darwin\Desktop\CS350_Final_Project\Blogging Away\obj\Debug\Blogging Awa
 C:\Users\Darwin\Desktop\CS350_Final_Project\Blogging Away\obj\Debug\Blogging Away.csproj.CoreCompileInputs.cache
 C:\Users\Darwin\Desktop\CS350_Final_Project\Blogging Away\obj\Debug\Blogging Away.exe
 C:\Users\Darwin\Desktop\CS350_Final_Project\Blogging Away\obj\Debug\Blogging Away.pdb
+C:\Users\Darwin\Desktop\CS350_Final_Project\Blogging Away\obj\Debug\Blogging_Away.Createarticle.resources
