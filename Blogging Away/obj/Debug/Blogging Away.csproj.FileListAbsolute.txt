@@ -10,3 +10,14 @@ C:\Users\Darwin\Desktop\CS350_Final_Project\Blogging Away\obj\Debug\Blogging Awa
 C:\Users\Darwin\Desktop\CS350_Final_Project\Blogging Away\obj\Debug\Blogging Away.exe
 C:\Users\Darwin\Desktop\CS350_Final_Project\Blogging Away\obj\Debug\Blogging Away.pdb
 C:\Users\Darwin\Desktop\CS350_Final_Project\Blogging Away\obj\Debug\Blogging_Away.Createarticle.resources
+C:\Users\owner\OneDrive\Documents\CHI\CS350_Final-master\Blogging Away\bin\Debug\Blogging Away.exe.config
+C:\Users\owner\OneDrive\Documents\CHI\CS350_Final-master\Blogging Away\bin\Debug\Blogging Away.exe
+C:\Users\owner\OneDrive\Documents\CHI\CS350_Final-master\Blogging Away\bin\Debug\Blogging Away.pdb
+C:\Users\owner\OneDrive\Documents\CHI\CS350_Final-master\Blogging Away\obj\Debug\Blogging Away.csprojAssemblyReference.cache
+C:\Users\owner\OneDrive\Documents\CHI\CS350_Final-master\Blogging Away\obj\Debug\Blogging_Away.Createarticle.resources
+C:\Users\owner\OneDrive\Documents\CHI\CS350_Final-master\Blogging Away\obj\Debug\Blogging_Away.Home.resources
+C:\Users\owner\OneDrive\Documents\CHI\CS350_Final-master\Blogging Away\obj\Debug\Blogging_Away.Login.resources
+C:\Users\owner\OneDrive\Documents\CHI\CS350_Final-master\Blogging Away\obj\Debug\Blogging_Away.Properties.Resources.resources
+C:\Users\owner\OneDrive\Documents\CHI\CS350_Final-master\Blogging Away\obj\Debug\Blogging Away.csproj.GenerateResource.cache
+C:\Users\owner\OneDrive\Documents\CHI\CS350_Final-master\Blogging Away\obj\Debug\Blogging Away.exe
+C:\Users\owner\OneDrive\Documents\CHI\CS350_Final-master\Blogging Away\obj\Debug\Blogging Away.pdb

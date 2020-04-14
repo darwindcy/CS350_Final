@@ -18,6 +18,8 @@ namespace Blogging_Away
         {
             InitializeComponent();
             RetrieveData();
+            if (Login.currentUser != "admin" )
+                btnCreateNew.Visible = false;
         }
 
         private void btnCreateNew_Click(object sender, EventArgs e)

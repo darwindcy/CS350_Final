@@ -61,5 +61,10 @@ namespace Blogging_Away
             String dateNow = DateTime.Now.ToString("MM-dd-yyyy_HH-mm-ss");
             return dateNow + ".txt";
         }
+
+        private void panelConfirm_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
