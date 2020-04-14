@@ -21,3 +21,4 @@ C:\Users\owner\OneDrive\Documents\CHI\CS350_Final-master\Blogging Away\obj\Debug
 C:\Users\owner\OneDrive\Documents\CHI\CS350_Final-master\Blogging Away\obj\Debug\Blogging Away.csproj.GenerateResource.cache
 C:\Users\owner\OneDrive\Documents\CHI\CS350_Final-master\Blogging Away\obj\Debug\Blogging Away.exe
 C:\Users\owner\OneDrive\Documents\CHI\CS350_Final-master\Blogging Away\obj\Debug\Blogging Away.pdb
+C:\Users\Darwin\Desktop\CS350_Final_Project\Blogging Away\obj\Debug\Blogging_Away.ViewArticle.resources

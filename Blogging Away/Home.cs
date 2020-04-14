@@ -51,5 +51,12 @@ namespace Blogging_Away
         {
             txtScreen.Text += data;
         }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login newLogin = new Login();
+            newLogin.Show();
+        }
     }
 }
