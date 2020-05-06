@@ -56,6 +56,7 @@
             // 
             // panelCreate
             // 
+            this.panelCreate.Controls.Add(this.panelConfirm);
             this.panelCreate.Controls.Add(this.btnPost);
             this.panelCreate.Controls.Add(this.txtArticledetail);
             this.panelCreate.Controls.Add(this.txtArticletitle);
@@ -66,19 +67,17 @@
             this.panelCreate.Controls.Add(this.label3);
             this.panelCreate.Controls.Add(this.label2);
             this.panelCreate.Controls.Add(this.label1);
-            this.panelCreate.Location = new System.Drawing.Point(232, 18);
-            this.panelCreate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panelCreate.Location = new System.Drawing.Point(155, 12);
             this.panelCreate.Name = "panelCreate";
-            this.panelCreate.Size = new System.Drawing.Size(788, 757);
+            this.panelCreate.Size = new System.Drawing.Size(525, 492);
             this.panelCreate.TabIndex = 0;
             // 
             // btnPost
             // 
             this.btnPost.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPost.Location = new System.Drawing.Point(276, 646);
-            this.btnPost.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnPost.Location = new System.Drawing.Point(184, 420);
             this.btnPost.Name = "btnPost";
-            this.btnPost.Size = new System.Drawing.Size(166, 52);
+            this.btnPost.Size = new System.Drawing.Size(111, 34);
             this.btnPost.TabIndex = 9;
             this.btnPost.Text = "Post";
             this.btnPost.UseVisualStyleBackColor = true;
@@ -87,50 +86,45 @@
             // txtArticledetail
             // 
             this.txtArticledetail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtArticledetail.Location = new System.Drawing.Point(276, 385);
-            this.txtArticledetail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtArticledetail.Location = new System.Drawing.Point(184, 250);
             this.txtArticledetail.Multiline = true;
             this.txtArticledetail.Name = "txtArticledetail";
-            this.txtArticledetail.Size = new System.Drawing.Size(421, 218);
+            this.txtArticledetail.Size = new System.Drawing.Size(282, 143);
             this.txtArticledetail.TabIndex = 8;
             // 
             // txtArticletitle
             // 
             this.txtArticletitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtArticletitle.Location = new System.Drawing.Point(276, 292);
-            this.txtArticletitle.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtArticletitle.Location = new System.Drawing.Point(184, 190);
             this.txtArticletitle.Name = "txtArticletitle";
-            this.txtArticletitle.Size = new System.Drawing.Size(238, 35);
+            this.txtArticletitle.Size = new System.Drawing.Size(160, 26);
             this.txtArticletitle.TabIndex = 7;
             // 
             // txtDate
             // 
             this.txtDate.Enabled = false;
             this.txtDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDate.Location = new System.Drawing.Point(276, 212);
-            this.txtDate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtDate.Location = new System.Drawing.Point(184, 138);
             this.txtDate.Name = "txtDate";
-            this.txtDate.Size = new System.Drawing.Size(238, 35);
+            this.txtDate.Size = new System.Drawing.Size(160, 26);
             this.txtDate.TabIndex = 6;
             // 
             // txtUsername
             // 
             this.txtUsername.Enabled = false;
             this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.Location = new System.Drawing.Point(276, 129);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtUsername.Location = new System.Drawing.Point(184, 84);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(421, 35);
+            this.txtUsername.Size = new System.Drawing.Size(282, 26);
             this.txtUsername.TabIndex = 5;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(96, 297);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(64, 193);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(134, 29);
+            this.label5.Size = new System.Drawing.Size(86, 20);
             this.label5.TabIndex = 4;
             this.label5.Text = "Article Title";
             // 
@@ -138,10 +132,9 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(96, 382);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(64, 248);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(148, 29);
+            this.label4.Size = new System.Drawing.Size(98, 20);
             this.label4.TabIndex = 3;
             this.label4.Text = "Article Detail";
             // 
@@ -149,10 +142,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(96, 218);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(64, 142);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 29);
+            this.label3.Size = new System.Drawing.Size(44, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "Date";
             // 
@@ -160,10 +152,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(94, 138);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(63, 90);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(135, 29);
+            this.label2.Size = new System.Drawing.Size(89, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "User Name";
             // 
@@ -171,10 +162,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(267, 22);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(178, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(271, 47);
+            this.label1.Size = new System.Drawing.Size(179, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "Create Article";
             // 
@@ -190,20 +180,18 @@
             this.panelConfirm.Controls.Add(this.lblDate);
             this.panelConfirm.Controls.Add(this.lblUsername);
             this.panelConfirm.Controls.Add(this.label10);
-            this.panelConfirm.Location = new System.Drawing.Point(232, 18);
-            this.panelConfirm.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panelConfirm.Location = new System.Drawing.Point(0, 0);
             this.panelConfirm.Name = "panelConfirm";
-            this.panelConfirm.Size = new System.Drawing.Size(788, 757);
+            this.panelConfirm.Size = new System.Drawing.Size(525, 492);
             this.panelConfirm.TabIndex = 1;
             this.panelConfirm.Paint += new System.Windows.Forms.PaintEventHandler(this.panelConfirm_Paint);
             // 
             // btnConfirmPost
             // 
             this.btnConfirmPost.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfirmPost.Location = new System.Drawing.Point(276, 646);
-            this.btnConfirmPost.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnConfirmPost.Location = new System.Drawing.Point(184, 420);
             this.btnConfirmPost.Name = "btnConfirmPost";
-            this.btnConfirmPost.Size = new System.Drawing.Size(166, 52);
+            this.btnConfirmPost.Size = new System.Drawing.Size(111, 34);
             this.btnConfirmPost.TabIndex = 9;
             this.btnConfirmPost.Text = "Confirm";
             this.btnConfirmPost.UseVisualStyleBackColor = true;
@@ -213,51 +201,46 @@
             // 
             this.txtConfirmdetail.Enabled = false;
             this.txtConfirmdetail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConfirmdetail.Location = new System.Drawing.Point(276, 385);
-            this.txtConfirmdetail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtConfirmdetail.Location = new System.Drawing.Point(184, 250);
             this.txtConfirmdetail.Multiline = true;
             this.txtConfirmdetail.Name = "txtConfirmdetail";
-            this.txtConfirmdetail.Size = new System.Drawing.Size(421, 218);
+            this.txtConfirmdetail.Size = new System.Drawing.Size(282, 143);
             this.txtConfirmdetail.TabIndex = 8;
             // 
             // txtConfirmtitle
             // 
             this.txtConfirmtitle.Enabled = false;
             this.txtConfirmtitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConfirmtitle.Location = new System.Drawing.Point(276, 300);
-            this.txtConfirmtitle.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtConfirmtitle.Location = new System.Drawing.Point(184, 195);
             this.txtConfirmtitle.Name = "txtConfirmtitle";
-            this.txtConfirmtitle.Size = new System.Drawing.Size(238, 35);
+            this.txtConfirmtitle.Size = new System.Drawing.Size(160, 26);
             this.txtConfirmtitle.TabIndex = 7;
             // 
             // txtConfirmdate
             // 
             this.txtConfirmdate.Enabled = false;
             this.txtConfirmdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConfirmdate.Location = new System.Drawing.Point(276, 222);
-            this.txtConfirmdate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtConfirmdate.Location = new System.Drawing.Point(184, 144);
             this.txtConfirmdate.Name = "txtConfirmdate";
-            this.txtConfirmdate.Size = new System.Drawing.Size(238, 35);
+            this.txtConfirmdate.Size = new System.Drawing.Size(160, 26);
             this.txtConfirmdate.TabIndex = 6;
             // 
             // txtConfirmusername
             // 
             this.txtConfirmusername.Enabled = false;
             this.txtConfirmusername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConfirmusername.Location = new System.Drawing.Point(276, 138);
-            this.txtConfirmusername.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtConfirmusername.Location = new System.Drawing.Point(184, 90);
             this.txtConfirmusername.Name = "txtConfirmusername";
-            this.txtConfirmusername.Size = new System.Drawing.Size(421, 35);
+            this.txtConfirmusername.Size = new System.Drawing.Size(282, 26);
             this.txtConfirmusername.TabIndex = 5;
             // 
             // lblArticleTitle
             // 
             this.lblArticleTitle.AutoSize = true;
             this.lblArticleTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblArticleTitle.Location = new System.Drawing.Point(96, 297);
-            this.lblArticleTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblArticleTitle.Location = new System.Drawing.Point(64, 193);
             this.lblArticleTitle.Name = "lblArticleTitle";
-            this.lblArticleTitle.Size = new System.Drawing.Size(134, 29);
+            this.lblArticleTitle.Size = new System.Drawing.Size(86, 20);
             this.lblArticleTitle.TabIndex = 4;
             this.lblArticleTitle.Text = "Article Title";
             // 
@@ -265,10 +248,9 @@
             // 
             this.lblArticleDetail.AutoSize = true;
             this.lblArticleDetail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblArticleDetail.Location = new System.Drawing.Point(96, 382);
-            this.lblArticleDetail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblArticleDetail.Location = new System.Drawing.Point(64, 248);
             this.lblArticleDetail.Name = "lblArticleDetail";
-            this.lblArticleDetail.Size = new System.Drawing.Size(148, 29);
+            this.lblArticleDetail.Size = new System.Drawing.Size(98, 20);
             this.lblArticleDetail.TabIndex = 3;
             this.lblArticleDetail.Text = "Article Detail";
             // 
@@ -276,10 +258,9 @@
             // 
             this.lblDate.AutoSize = true;
             this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.Location = new System.Drawing.Point(96, 218);
-            this.lblDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDate.Location = new System.Drawing.Point(64, 142);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(63, 29);
+            this.lblDate.Size = new System.Drawing.Size(44, 20);
             this.lblDate.TabIndex = 2;
             this.lblDate.Text = "Date";
             // 
@@ -287,10 +268,9 @@
             // 
             this.lblUsername.AutoSize = true;
             this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsername.Location = new System.Drawing.Point(94, 138);
-            this.lblUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUsername.Location = new System.Drawing.Point(63, 90);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(124, 29);
+            this.lblUsername.Size = new System.Drawing.Size(83, 20);
             this.lblUsername.TabIndex = 1;
             this.lblUsername.Text = "Username";
             // 
@@ -298,21 +278,18 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(267, 22);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Location = new System.Drawing.Point(178, 14);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(254, 47);
+            this.label10.Size = new System.Drawing.Size(167, 31);
             this.label10.TabIndex = 0;
             this.label10.Text = "Article Detail";
             // 
             // Createarticle
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1242, 828);
-            this.Controls.Add(this.panelConfirm);
+            this.ClientSize = new System.Drawing.Size(828, 538);
             this.Controls.Add(this.panelCreate);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Createarticle";
             this.Text = "Createarticle";
             this.panelCreate.ResumeLayout(false);
