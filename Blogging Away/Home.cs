@@ -69,7 +69,8 @@ namespace Blogging_Away
                     button.Text = "Reply";
 
                     data = data.Trim();
-                    AddToScreen(data);
+
+
                     createDataForScreen(data, Path.GetFileName(file), replyFiles);
                     filesRead.Add(Path.GetFileName(file));
                 }
@@ -165,11 +166,6 @@ namespace Blogging_Away
             label.Location = new Point(0, sum + 5);
 
             return label;
-        }
-
-        private void AddToScreen(String data)
-        {
-            txtScreen.Text += data;
         }
 
         private void btnLogout_Click(object sender, EventArgs e)

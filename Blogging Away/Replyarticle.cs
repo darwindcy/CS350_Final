@@ -65,10 +65,10 @@ namespace Blogging_Away
             String createdFileName = CreateFileName();
             using (StreamWriter writeFile = new StreamWriter(fileLocation + createdFileName, true))
             {
-                writeFile.WriteLine("Posted By:" + txtConfirmusername.Text);
+                writeFile.WriteLine("Replied By:" + txtConfirmusername.Text);
                 writeFile.WriteLine("Date: " + txtConfirmdate.Text);
-                writeFile.WriteLine("Article Title: " + txtConfirmtitle.Text);
-                writeFile.WriteLine("Article Detail: " + txtConfirmdetail.Text);
+                writeFile.WriteLine("Reply Title: " + txtConfirmtitle.Text);
+                writeFile.WriteLine("Reply Detail: " + txtConfirmdetail.Text);
             }
             using (StreamWriter writeFile = File.AppendText(fileLocation + replyParentFile))
             {

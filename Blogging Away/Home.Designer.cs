@@ -43,7 +43,6 @@
             this.tabMessageList = new System.Windows.Forms.TabPage();
             this.flowLayoutmessagelist = new System.Windows.Forms.FlowLayoutPanel();
             this.btnCreateNew = new System.Windows.Forms.Button();
-            this.txtScreen = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabAbout = new System.Windows.Forms.TabPage();
             this.lblAbout = new System.Windows.Forms.Label();
@@ -97,7 +96,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel3.BackColor = System.Drawing.Color.LightSkyBlue;
             this.panel3.Controls.Add(this.label4);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
@@ -170,7 +169,6 @@
             // 
             this.tabMessageList.Controls.Add(this.flowLayoutmessagelist);
             this.tabMessageList.Controls.Add(this.btnCreateNew);
-            this.tabMessageList.Controls.Add(this.txtScreen);
             this.tabMessageList.Controls.Add(this.label1);
             this.tabMessageList.Location = new System.Drawing.Point(124, 4);
             this.tabMessageList.Name = "tabMessageList";
@@ -185,7 +183,7 @@
             this.flowLayoutmessagelist.AutoScroll = true;
             this.flowLayoutmessagelist.BackColor = System.Drawing.Color.Silver;
             this.flowLayoutmessagelist.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutmessagelist.Location = new System.Drawing.Point(30, 79);
+            this.flowLayoutmessagelist.Location = new System.Drawing.Point(33, 78);
             this.flowLayoutmessagelist.Name = "flowLayoutmessagelist";
             this.flowLayoutmessagelist.Size = new System.Drawing.Size(507, 452);
             this.flowLayoutmessagelist.TabIndex = 9;
@@ -201,17 +199,6 @@
             this.btnCreateNew.Text = "Create New Article";
             this.btnCreateNew.UseVisualStyleBackColor = true;
             this.btnCreateNew.Click += new System.EventHandler(this.btnCreateNew_Click);
-            // 
-            // txtScreen
-            // 
-            this.txtScreen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtScreen.Location = new System.Drawing.Point(30, 82);
-            this.txtScreen.Multiline = true;
-            this.txtScreen.Name = "txtScreen";
-            this.txtScreen.ReadOnly = true;
-            this.txtScreen.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtScreen.Size = new System.Drawing.Size(491, 445);
-            this.txtScreen.TabIndex = 8;
             // 
             // label1
             // 
@@ -289,7 +276,6 @@
         private System.Windows.Forms.TabPage tabHome;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TabPage tabMessageList;
-        private System.Windows.Forms.TextBox txtScreen;
         private System.Windows.Forms.Button btnCreateNew;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabPage tabAbout;
