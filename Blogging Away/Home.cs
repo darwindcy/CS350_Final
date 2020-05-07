@@ -24,7 +24,7 @@ namespace Blogging_Away
             String newLabel = lblUser.Text + Environment.NewLine + Login.currentUser;
             lblUser.Text = newLabel;
 
-            if (Login.currentUser != "admin" && Login.currentUser != "author")
+            if (Login.currentUser != "author")
                 btnCreateNew.Visible = false;
         }
 
