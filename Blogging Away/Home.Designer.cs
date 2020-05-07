@@ -72,13 +72,14 @@
             // 
             // btnLogout
             // 
+            this.btnLogout.BackColor = System.Drawing.Color.LightGray;
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.Location = new System.Drawing.Point(6, 71);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(75, 32);
             this.btnLogout.TabIndex = 3;
             this.btnLogout.Text = "Logout";
-            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.UseVisualStyleBackColor = false;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // lblUser
@@ -142,7 +143,7 @@
             // 
             // tabMessageList
             // 
-            this.tabMessageList.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tabMessageList.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.tabMessageList.Controls.Add(this.flowLayoutmessagelist);
             this.tabMessageList.Controls.Add(this.btnCreateNew);
             this.tabMessageList.Controls.Add(this.label1);
@@ -167,13 +168,14 @@
             // 
             // btnCreateNew
             // 
+            this.btnCreateNew.BackColor = System.Drawing.Color.LightGray;
             this.btnCreateNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreateNew.Location = new System.Drawing.Point(414, 45);
+            this.btnCreateNew.Location = new System.Drawing.Point(411, 41);
             this.btnCreateNew.Name = "btnCreateNew";
             this.btnCreateNew.Size = new System.Drawing.Size(159, 31);
             this.btnCreateNew.TabIndex = 7;
             this.btnCreateNew.Text = "Create New Article";
-            this.btnCreateNew.UseVisualStyleBackColor = true;
+            this.btnCreateNew.UseVisualStyleBackColor = false;
             this.btnCreateNew.Click += new System.EventHandler(this.btnCreateNew_Click);
             // 
             // label1
