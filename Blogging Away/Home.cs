@@ -110,6 +110,7 @@ namespace Blogging_Away
                         }
                     }
                 }
+                listView.Controls.Add(CreateLabel("--------------------------------------", listView));
                 listView.Controls.Add(CreateLabel(filedata, listView));
                 filesRead.Add(rf);
             }
