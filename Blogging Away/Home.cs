@@ -207,7 +207,7 @@ namespace Blogging_Away
             }
 
             // Use our own font.
-            Font _tabFont = new Font("Times New Roman", (float)14.0, FontStyle.Bold, GraphicsUnit.Pixel);
+            Font _tabFont = new Font("Microsoft Sans Serif", (float)14.0, FontStyle.Regular, GraphicsUnit.Pixel);
 
             // Draw string. Center the text.
             StringFormat _stringFlags = new StringFormat();
