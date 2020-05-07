@@ -57,6 +57,7 @@
             // 
             // panelCreate
             // 
+            this.panelCreate.BackColor = System.Drawing.SystemColors.ControlLight;
             this.panelCreate.Controls.Add(this.panelConfirm);
             this.panelCreate.Controls.Add(this.btnPost);
             this.panelCreate.Controls.Add(this.txtArticledetail);
@@ -75,6 +76,7 @@
             // 
             // panelConfirm
             // 
+            this.panelConfirm.BackColor = System.Drawing.SystemColors.ControlLight;
             this.panelConfirm.Controls.Add(this.btnBack);
             this.panelConfirm.Controls.Add(this.btnConfirmPost);
             this.panelConfirm.Controls.Add(this.txtConfirmdetail);
