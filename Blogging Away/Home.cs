@@ -20,11 +20,11 @@ namespace Blogging_Away
         {
             InitializeComponent();
             RetrieveData();
-            lblAbout.Text = "Bloggin Away - Communication made easy";
+            lblAbout.Text = "Bloggin Away - Communication made easy \nBlogging away allows authors post articles and \nallows the followers to reply to the articles";
             String newLabel = lblUser.Text + Environment.NewLine + Login.currentUser;
             lblUser.Text = newLabel;
 
-            if (Login.currentUser != "admin" )
+            if (Login.currentUser != "admin" && Login.currentUser != "author")
                 btnCreateNew.Visible = false;
         }
 
@@ -40,9 +40,16 @@ namespace Blogging_Away
 
         private void RetrieveData()
         {
+            string[] fileNames = Directory.GetFiles(folderPath, "*.txt");
+            DateTime[] creationTimes = new DateTime[fileNames.Length];
+            for (int i = 0; i < fileNames.Length; i++)
+                creationTimes[i] = new FileInfo(fileNames[i]).LastWriteTimeUtc;
+            Array.Sort(creationTimes, fileNames);
+            Array.Reverse(fileNames);
             String Data = "";
-            
-            foreach (String file in Directory.EnumerateFiles(folderPath, "*.txt"))
+            IEnumerable<String> allFiles = Directory.EnumerateFiles(folderPath, "*.txt");
+
+            foreach (String file in fileNames)
             {
                 String data = "";
                 HashSet<String> replyFiles = new HashSet<String>();
@@ -110,7 +117,7 @@ namespace Blogging_Away
             
 
             listView.Left = listView.Parent.Left + 5;
-            listView.Width = listView.Parent.Width - 30;
+            listView.Width = listView.Parent.Width - 25;
 
             int sum = 0;
             int bottom = 0;
@@ -119,8 +126,8 @@ namespace Blogging_Away
                 sum += c.Height;
                 c.BringToFront();
             }
-            listView.Height = sum + 30;
-     
+            listView.Height = sum + 25;
+            
             // add panel to the flowlayoutpanel
         }
         private void CreateAndAddButton(ListView l, String filename)
@@ -139,7 +146,7 @@ namespace Blogging_Away
             {
                 sum += c.Height;
             }
-            button.Location = new Point(0, sum + 5);
+            button.Location = new Point(0, sum + 10);
             l.Controls.Add(button);
         }
         protected void replyButton_click(object sender, EventArgs e)
@@ -163,7 +170,7 @@ namespace Blogging_Away
             {
                 sum += c.Height;
             }
-            label.Location = new Point(0, sum + 5);
+            label.Location = new Point(0, sum + 10);
 
             return label;
         }
@@ -190,7 +197,7 @@ namespace Blogging_Away
             {
 
                 // Draw a different background color, and don't paint a focus rectangle.
-                _textBrush = new SolidBrush(Color.Red);
+                _textBrush = new SolidBrush(Color.Blue);
                 g.FillRectangle(Brushes.Gray, e.Bounds);
             }
             else
@@ -200,7 +207,7 @@ namespace Blogging_Away
             }
 
             // Use our own font.
-            Font _tabFont = new Font("Microsoft Sans Serif", (float)13.0, FontStyle.Regular, GraphicsUnit.Pixel);
+            Font _tabFont = new Font("Times New Roman", (float)14.0, FontStyle.Bold, GraphicsUnit.Pixel);
 
             // Draw string. Center the text.
             StringFormat _stringFlags = new StringFormat();

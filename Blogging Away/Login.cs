@@ -24,17 +24,25 @@ namespace Blogging_Away
             {
                 MessageBox.Show("Invalid Username or password");
             }
-            if(txtUsername.Text == txtPassword.Text)
+            if(txtUsername.Text.ToLower() == "admin" || txtUsername.Text.ToLower() == "author" || 
+                txtUsername.Text.ToLower() == "user" || txtUsername.Text.ToLower() == "follower" || txtUsername.Text.ToLower() == "student")
             {
-                currentUser = txtUsername.Text;
-                this.Hide();
-                Home newHome = new Home();
-                
-                newHome.Show();
+                if (txtUsername.Text == txtPassword.Text)
+                {
+                    currentUser = txtUsername.Text;
+                    this.Hide();
+                    Home newHome = new Home();
+
+                    newHome.Show();
+                } 
+                else
+                {
+                    MessageBox.Show("Username or Password Incorrect");
+                }
             } 
                 else
             {
-                MessageBox.Show("Username or Password Incorrect");
+                MessageBox.Show("User access denied");
             }
         }
 

@@ -38,7 +38,7 @@ namespace Blogging_Away
         private void setData()
         {
             txtUsername.Text = Login.currentUser;
-            txtDate.Text = DateTime.Now.Date.ToString();
+            txtDate.Text = DateTime.Now.ToString();
         }
 
         private void btnConfirmPost_Click(object sender, EventArgs e)
@@ -57,7 +57,6 @@ namespace Blogging_Away
 
         private String CreateFileName()
         {
-            
             String dateNow = DateTime.Now.ToString("MM-dd-yyyy_HH-mm-ss");
             return dateNow + ".txt";
         }
@@ -65,6 +64,11 @@ namespace Blogging_Away
         private void panelConfirm_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            panelConfirm.Hide();
         }
     }
 }

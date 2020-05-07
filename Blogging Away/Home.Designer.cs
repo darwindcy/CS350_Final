@@ -38,8 +38,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabHome = new System.Windows.Forms.TabPage();
-            this.label5 = new System.Windows.Forms.Label();
             this.tabMessageList = new System.Windows.Forms.TabPage();
             this.flowLayoutmessagelist = new System.Windows.Forms.FlowLayoutPanel();
             this.btnCreateNew = new System.Windows.Forms.Button();
@@ -51,7 +49,6 @@
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
-            this.tabHome.SuspendLayout();
             this.tabMessageList.SuspendLayout();
             this.tabAbout.SuspendLayout();
             this.SuspendLayout();
@@ -64,7 +61,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel2.Controls.Add(this.btnLogout);
             this.panel2.Controls.Add(this.lblUser);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
@@ -76,7 +73,7 @@
             // btnLogout
             // 
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.Location = new System.Drawing.Point(6, 54);
+            this.btnLogout.Location = new System.Drawing.Point(6, 71);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(75, 32);
             this.btnLogout.TabIndex = 3;
@@ -88,11 +85,11 @@
             // 
             this.lblUser.AutoSize = true;
             this.lblUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUser.Location = new System.Drawing.Point(21, 9);
+            this.lblUser.Location = new System.Drawing.Point(17, 20);
             this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(43, 20);
+            this.lblUser.Size = new System.Drawing.Size(47, 20);
             this.lblUser.TabIndex = 4;
-            this.lblUser.Text = "User";
+            this.lblUser.Text = "User:";
             // 
             // panel3
             // 
@@ -127,7 +124,6 @@
             // tabControl1
             // 
             this.tabControl1.Alignment = System.Windows.Forms.TabAlignment.Left;
-            this.tabControl1.Controls.Add(this.tabHome);
             this.tabControl1.Controls.Add(this.tabMessageList);
             this.tabControl1.Controls.Add(this.tabAbout);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -144,29 +140,9 @@
             this.tabControl1.TabIndex = 5;
             this.tabControl1.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.tabControl1_DrawItem);
             // 
-            // tabHome
-            // 
-            this.tabHome.Controls.Add(this.label5);
-            this.tabHome.Location = new System.Drawing.Point(124, 4);
-            this.tabHome.Name = "tabHome";
-            this.tabHome.Padding = new System.Windows.Forms.Padding(3);
-            this.tabHome.Size = new System.Drawing.Size(576, 530);
-            this.tabHome.TabIndex = 0;
-            this.tabHome.Text = "Home";
-            this.tabHome.UseVisualStyleBackColor = true;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(248, 23);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(86, 31);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Home";
-            // 
             // tabMessageList
             // 
+            this.tabMessageList.BackColor = System.Drawing.SystemColors.ControlLight;
             this.tabMessageList.Controls.Add(this.flowLayoutmessagelist);
             this.tabMessageList.Controls.Add(this.btnCreateNew);
             this.tabMessageList.Controls.Add(this.label1);
@@ -176,13 +152,13 @@
             this.tabMessageList.Size = new System.Drawing.Size(576, 530);
             this.tabMessageList.TabIndex = 1;
             this.tabMessageList.Text = "Message List";
-            this.tabMessageList.UseVisualStyleBackColor = true;
             // 
             // flowLayoutmessagelist
             // 
             this.flowLayoutmessagelist.AutoScroll = true;
             this.flowLayoutmessagelist.BackColor = System.Drawing.Color.Silver;
             this.flowLayoutmessagelist.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutmessagelist.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.flowLayoutmessagelist.Location = new System.Drawing.Point(33, 78);
             this.flowLayoutmessagelist.Name = "flowLayoutmessagelist";
             this.flowLayoutmessagelist.Size = new System.Drawing.Size(507, 452);
@@ -224,9 +200,10 @@
             // lblAbout
             // 
             this.lblAbout.AutoSize = true;
+            this.lblAbout.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAbout.Location = new System.Drawing.Point(85, 100);
             this.lblAbout.Name = "lblAbout";
-            this.lblAbout.Size = new System.Drawing.Size(95, 20);
+            this.lblAbout.Size = new System.Drawing.Size(111, 24);
             this.lblAbout.TabIndex = 8;
             this.lblAbout.Text = "#Something";
             // 
@@ -254,8 +231,6 @@
             this.panel3.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
-            this.tabHome.ResumeLayout(false);
-            this.tabHome.PerformLayout();
             this.tabMessageList.ResumeLayout(false);
             this.tabMessageList.PerformLayout();
             this.tabAbout.ResumeLayout(false);
@@ -273,8 +248,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabHome;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TabPage tabMessageList;
         private System.Windows.Forms.Button btnCreateNew;
         private System.Windows.Forms.Label label1;

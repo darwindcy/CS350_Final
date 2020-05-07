@@ -43,7 +43,7 @@ namespace Blogging_Away
         private void setData()
         {
             txtUsername.Text = Login.currentUser;
-            txtDate.Text = DateTime.Now.Date.ToString();
+            txtDate.Text = DateTime.Now.Date.ToString("d");
             String data = "";
             String title = "";
             using (StreamReader readtext = new StreamReader(fileLocation + replyParentFile))
@@ -67,9 +67,10 @@ namespace Blogging_Away
             {
                 writeFile.WriteLine("Replied By:" + txtConfirmusername.Text);
                 writeFile.WriteLine("Date: " + txtConfirmdate.Text);
-                writeFile.WriteLine("Reply Title: " + txtConfirmtitle.Text);
-                writeFile.WriteLine("Reply Detail: " + txtConfirmdetail.Text);
+                writeFile.WriteLine("Title: " + txtConfirmtitle.Text);
+                writeFile.WriteLine("Detail: " + txtConfirmdetail.Text);
             }
+            System.Threading.Thread.Sleep(500);
             using (StreamWriter writeFile = File.AppendText(fileLocation + replyParentFile))
             {
                 writeFile.WriteLine("Reply files: " + createdFileName);
@@ -88,6 +89,11 @@ namespace Blogging_Away
         private void panelConfirm_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            panelConfirm.Hide();
         }
     }
 }

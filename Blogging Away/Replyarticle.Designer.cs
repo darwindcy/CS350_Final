@@ -50,13 +50,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnBack = new System.Windows.Forms.Button();
             this.panelCreate.SuspendLayout();
             this.panelConfirm.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelCreate
             // 
-            this.panelCreate.Controls.Add(this.panelConfirm);
             this.panelCreate.Controls.Add(this.btnPost);
             this.panelCreate.Controls.Add(this.txtArticledetail);
             this.panelCreate.Controls.Add(this.txtArticletitle);
@@ -74,6 +74,7 @@
             // 
             // panelConfirm
             // 
+            this.panelConfirm.Controls.Add(this.btnBack);
             this.panelConfirm.Controls.Add(this.btnConfirmPost);
             this.panelConfirm.Controls.Add(this.txtConfirmdetail);
             this.panelConfirm.Controls.Add(this.txtConfirmtitle);
@@ -84,7 +85,7 @@
             this.panelConfirm.Controls.Add(this.lblDate);
             this.panelConfirm.Controls.Add(this.lblUsername);
             this.panelConfirm.Controls.Add(this.label10);
-            this.panelConfirm.Location = new System.Drawing.Point(0, 0);
+            this.panelConfirm.Location = new System.Drawing.Point(191, 39);
             this.panelConfirm.Name = "panelConfirm";
             this.panelConfirm.Size = new System.Drawing.Size(525, 492);
             this.panelConfirm.TabIndex = 1;
@@ -92,7 +93,7 @@
             // btnConfirmPost
             // 
             this.btnConfirmPost.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfirmPost.Location = new System.Drawing.Point(184, 420);
+            this.btnConfirmPost.Location = new System.Drawing.Point(345, 420);
             this.btnConfirmPost.Name = "btnConfirmPost";
             this.btnConfirmPost.Size = new System.Drawing.Size(111, 34);
             this.btnConfirmPost.TabIndex = 9;
@@ -213,7 +214,7 @@
             this.txtArticletitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtArticletitle.Location = new System.Drawing.Point(184, 190);
             this.txtArticletitle.Name = "txtArticletitle";
-            this.txtArticletitle.Size = new System.Drawing.Size(160, 26);
+            this.txtArticletitle.Size = new System.Drawing.Size(282, 26);
             this.txtArticletitle.TabIndex = 7;
             // 
             // txtDate
@@ -284,11 +285,23 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Create Reply";
             // 
+            // btnBack
+            // 
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(202, 420);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(111, 34);
+            this.btnBack.TabIndex = 10;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // Replyarticle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(907, 571);
+            this.Controls.Add(this.panelConfirm);
             this.Controls.Add(this.panelCreate);
             this.Name = "Replyarticle";
             this.Text = "Replyarticle";
@@ -324,5 +337,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnBack;
     }
 }
